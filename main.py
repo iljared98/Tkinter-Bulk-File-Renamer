@@ -52,6 +52,7 @@ def bulkRename():
   count = 0
   for file in filelist:
       filename = os.path.split(file)
+      os.path.splitext(path)[0]+'{}'.format(val2)
       new_filename = path + val1 + str(count + 1) + ".{}".format(val3)
       os.rename(path+filename[1], new_filename)
       count = count + 1
